@@ -1,0 +1,10 @@
+version: 0.2
+
+env:
+  parameter-store:
+    TEST: /test/ezaki
+
+phases:
+  build:
+    commands:
+      - echo ${TEST}
