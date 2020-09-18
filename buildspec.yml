@@ -2,9 +2,9 @@ version: 0.2
 
 env:
   parameter-store:
-    TEST: /test/ezaki
+    TEST: /test/ezaki2
 
 phases:
   build:
     commands:
-      - aws ssm put-parameter --name /ezaki/test10 --value ${TEST} --type String --overwrite
+      - aws ssm put-parameter --name /test/ezaki10 --value ${TEST} --type String --overwrite
