@@ -7,4 +7,4 @@ env:
 phases:
   build:
     commands:
-      - echo ${TEST}
+      - echo "${TEST}"
