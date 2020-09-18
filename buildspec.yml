@@ -7,5 +7,4 @@ env:
 phases:
   build:
     commands:
-      - echo "${TEST}" > tmp
-      - cat tmp
+      - aws ssm put-parameter --name /ezaki/test10 --value ${TEST} --type String --overwrite
